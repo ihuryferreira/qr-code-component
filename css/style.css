@@ -66,12 +66,40 @@ body {
 
 .footer p span {
     color: #0044ff;
+    cursor: pointer;
 }
 
-@media (max-width: 345px) {
+.footer p span:hover {
+    color: #47a9f8ea;
+    border-bottom: 1px solid #3d8ffa;
+}
+
+@media (max-width: 1072px) {
     .box {
-        margin-top: 1em;
-        width: 90%;
-        padding: 12px;
+        margin-top: 1rem;
+        max-width: 90%;
+    }
+
+    .box img {
+        width: 88%;
+    }
+
+    .box .title {
+        font-size: calc(1vw + 1.2rem);
+    }
+
+    .box .paragraph {
+        font-size: calc(1vw + 1rem);
+    }
+
+    .footer {
+        margin-top: 1rem;
+        margin-bottom: 1.3rem;
+        padding-left: 0;
+        padding-right: 1rem;
+    }
+
+    .footer p {
+        font-size: calc(0.5vh + 1.1rem);
     }
 }
